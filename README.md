@@ -15,14 +15,14 @@ To create a simple converter app that converts Kg to pounds in Android Studio, f
     
     
     button.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        EditText editText = findViewById(R.id.edit_text);
-        TextView textView = findViewById(R.id.text_view);
-        double kilograms = Double.parseDouble(editText.getText().toString());
-        double pounds = kilograms * 2.20462;
-        textView.setText(String.format("%.2f pounds", pounds));
-    }
+        @Override
+        public void onClick(View view) {
+            EditText editText = findViewById(R.id.edit_text);
+            TextView textView = findViewById(R.id.text_view);
+            double kilograms = Double.parseDouble(editText.getText().toString());
+            double pounds = kilograms * 2.20462;
+            textView.setText(String.format("%.2f pounds", pounds));
+           }
    });
 5. Test the app. Run the app on an emulator or a physical device and test the conversion by entering a weight in kilograms and clicking the conversion button. The app should display the equivalent weight in pounds in the TextView.
 
